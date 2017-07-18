@@ -1,4 +1,0 @@
-Al comenzar, sale una tabla en pantalla con un botón de nuevo, con el cual nos sale en pantalla un formulario con el título de nuevo registro, para dar de alta en un futuro un nuevo registro, si le damos a cancelar, volvemos al principio. Si le damos a aceptar nos saldrá un mensaje de confirmación.
-Si seleccionamos en un archivo de la tabla nos llevara al mismo formulario con el título de modificar registro, con el mismo comportamiento.
-Hay un tercer botón para borrar registros en un futuro no muy lejano.
-Utilizado JavaScript, jquery,html5,css3.

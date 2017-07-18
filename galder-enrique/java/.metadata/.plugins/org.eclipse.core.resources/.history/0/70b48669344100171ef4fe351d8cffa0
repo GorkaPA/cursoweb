@@ -1,9 +1,0 @@
-package geometria;
-
-public class Direccion {
-	
-	private Arriba;
-	private Abajo;
-	private
-
-}

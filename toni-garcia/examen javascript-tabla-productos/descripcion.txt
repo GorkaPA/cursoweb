@@ -1,6 +1,0 @@
-He utilizado bootstrap para maquetar la pagina y jquery para el lado javascript.
-El documento muestra una tabla prederterminada y en cada fila tenemos 2 botones, el de modificar y el de borrar.
-EL boton modificar muestra un formulario cuyos campos estan llenos con la informacion de la tabla. Al hacer submit en el formulario este enviara los datos al servidor (parte que no esta programada) para que el servidor vuelva a validarlos y devuelva la tabla modificada.
-El boton de borrar solo da de baja dicho producto. No borra fisicamente el registro.
-Y por ultimo tenemos un boton para crear registros cuya funcion es mostrar el mismo formulario que "modificar", pero este formulario estara vacio a excepcion del campo ID deshabilitado y con el valor de la ultima id de la tabla + 1 con la intencion de generar un nuevo registro en el servidor. Al hacer submit en el formulario de "crear" deberemos mandarle al servidor los datos y este nos devolvera la tabla modificada.
-Seria necesario crear una funcion para recoger los datos del servidor y mostrarlos en la tabla.
