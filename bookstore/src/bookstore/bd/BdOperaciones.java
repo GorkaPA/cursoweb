@@ -129,10 +129,17 @@ public class BdOperaciones extends BdBase {
 	public boolean insertUser(User user) {
 		boolean correcto = true;
 		try {
-			String sentenciaSql = "insert into users(dni,nombre,apellido,edad,direccion,codPostal,localidad,telefono) values ('"
-					+ user.getDni() + "','" + user.getNombre() + "','" + user.getApellido() + "',"
-					+ user.getEdad() + ",'" + user.getDireccion() + "'," + user.getCodPostal() + ",'"
-					+ user.getLocalidad() + "'," + user.getTelefono() + ")";
+			String sentenciaSql = "insert into user(user, password, name, secondname, id, address, birthdate, email) "
+					+ "values ('"
+					+ user.getUser() + "','" 
+					+ user.getPassword() + "','" 
+					+ user.getName() + "','"
+					+ user.getSecondName() + "','" 
+					+ user.getId() + "','" 
+					+ user.getAddress() + "','"
+					+ user.getBirthdate() + "','" 
+					+ user.getEmail() + "')";
+			
 			System.out.println(sentenciaSql);
 			Statement stmt = conexion.createStatement();
 			stmt.execute(sentenciaSql);

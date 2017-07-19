@@ -19,7 +19,7 @@ public class User implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 
-	private int iduser;
+
 	private String user;
 	private String password;
 	private String name;
@@ -29,10 +29,9 @@ public class User implements Serializable{
     private Date birthdate;
     private String email;
 
-	public User(int iduser, String user, String password, String name, String secondName, String id, String address,
+	public User(String user, String password, String name, String secondName, String id, String address,
 			Date birthdate, String email) {
 		super();
-		this.iduser = iduser;
 		this.user = user;
 		this.password = password;
 		this.name = name;
@@ -49,12 +48,7 @@ public class User implements Serializable{
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public int getIduser() {
-		return iduser;
-	}
-	public void setIduser(int iduser) {
-		this.iduser = iduser;
-	}
+
 	public String getUser() {
 		return user;
 	}
