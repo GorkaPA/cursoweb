@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:web="http://xmlns.jcp.org/xml/ns/javaee"
-	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	xmlns:web="http://java.sun.com/xml/ns/javaee" xmlns:web_1="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd http://java.sun.com/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 	<welcome-file-list>
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
@@ -17,5 +17,25 @@
 	<servlet-mapping>
 		<servlet-name>SrvValidarEntrada</servlet-name>
 		<url-pattern>/servlet/SrvValidarEntrada</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>SrvBuscarLibros</display-name>
+		<servlet-name>SrvBuscarLibros</servlet-name>
+		<servlet-class>tulibroencasa.servlets.SrvBuscarLibros</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SrvBuscarLibros</servlet-name>
+		<url-pattern>/SrvBuscarLibros</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>SrvMostrarLibros</display-name>
+		<servlet-name>SrvMostrarLibros</servlet-name>
+		<servlet-class>tulibroencasa.servlets.SrvMostrarLibros</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SrvMostrarLibros</servlet-name>
+		<url-pattern>/SrvMostrarLibros</url-pattern>
 	</servlet-mapping>
 </web-app>

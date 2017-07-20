@@ -61,7 +61,7 @@ public class SrvValidarEntrada extends HttpServlet {
 			RequestDispatcher rd = ct.getRequestDispatcher("/menu.jsp");
 			rd.forward(request, response);
 		} else {
-			response.sendRedirect("login.html");
+			response.sendRedirect("../index.jsp");
 		}
 	}
 
