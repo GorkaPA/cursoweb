@@ -26,7 +26,7 @@
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>SrvBuscarLibros</servlet-name>
-		<url-pattern>/SrvBuscarLibros</url-pattern>
+		<url-pattern>/servlet/SrvBuscarLibros</url-pattern>
 	</servlet-mapping>
 	<servlet>
 		<description></description>
@@ -36,6 +36,16 @@
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>SrvMostrarLibros</servlet-name>
-		<url-pattern>/SrvMostrarLibros</url-pattern>
+		<url-pattern>/servlet/SrvMostrarLibros</url-pattern>
+	</servlet-mapping>
+		<servlet>
+		<description></description>
+		<display-name>SrvRegistro</display-name>
+		<servlet-name>SrvRegistro</servlet-name>
+		<servlet-class>tulibroencasa.servlets.SrvRegistro</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SrvRegistro</servlet-name>
+		<url-pattern>/servlet/SrvRegistro</url-pattern>
 	</servlet-mapping>
 </web-app>
