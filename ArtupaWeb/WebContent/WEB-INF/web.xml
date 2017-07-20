@@ -8,7 +8,7 @@
     <servlet-class>artupa.servlets.SrvValidarEntrada</servlet-class>
     <init-param>
       <param-name>fichero_propiedades</param-name>
-      <param-value>C:\\desarrollo\\web\\web-zalla\\ArtupaWeb\\WebContent\\WEB-INF\\artupa.properties</param-value>
+      <param-value>C:\\Users\\ZALLA\\git\\cursoweb\\ArtupaWeb\\WebContent\\WEB-INF\\artupa.properties</param-value>
     </init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>

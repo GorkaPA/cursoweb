@@ -50,7 +50,7 @@ public class BdOperaciones extends BdBase {
 	public List<User> getUsers() {
 		List<User> users = new ArrayList<User>();
 		try {
-			String sentenciaSql = "select iduser, user, password, name, secondname, id, address, birthdate, email from users";
+			String sentenciaSql = "select iduser, user, password, name, secondname, id, address, birthdate, email from user";
 			System.out.println(sentenciaSql);
 			Statement stmt = conexion.createStatement();
 			ResultSet rs = stmt.executeQuery(sentenciaSql);
@@ -74,7 +74,7 @@ public class BdOperaciones extends BdBase {
 			stmt.close();
 		} catch (Exception e) {
 			e.printStackTrace();
-			System.out.println("Consulta de users no efectuada correctamente");
+			System.out.println("Consulta de user no efectuada correctamente");
 		}
 		return users;
 	}
@@ -82,7 +82,7 @@ public class BdOperaciones extends BdBase {
 	public User getUser(String dni) {
 		User user = null;
 		try {
-			String sentenciaSql = "select dni,nombre,apellido,edad,direccion,codPostal,localidad,telefono from users "
+			String sentenciaSql = "select dni,nombre,apellido,edad,direccion,codPostal,localidad,telefono from user "
 					+ "where dni='" + dni + "'";
 			System.out.println(sentenciaSql);
 			Statement stmt = conexion.createStatement();
@@ -105,7 +105,7 @@ public class BdOperaciones extends BdBase {
 			stmt.close();
 		} catch (Exception e) {
 			e.printStackTrace();
-			System.out.println("Consulta de users no efectuada correctamente");
+			System.out.println("Consulta de user no efectuada correctamente");
 		}
 		return user;
 	}
@@ -113,7 +113,7 @@ public class BdOperaciones extends BdBase {
 	public boolean deleteUser(String id) {
 		boolean correcto = true;
 		try {
-			String sentenciaSql = "delete from users where id='" + id + "'";
+			String sentenciaSql = "delete from user where id='" + id + "'";
 			System.out.println(sentenciaSql);
 			Statement stmt = conexion.createStatement();
 			stmt.execute(sentenciaSql);
@@ -151,13 +151,19 @@ public class BdOperaciones extends BdBase {
 		}
 		return correcto;
 	}
-
+//	user, password, name, secondname, id, address, birthdate, email
 	public boolean modificarUser(User user) {
 		boolean correcto = true;
 		try {
-			String sentenciaSql = "update users set " + "nombre='" + user.getNombre() + "', " + "apellido='"
-					+ user.getApellido() + "', " + "edad=" + user.getEdad() + ", " + "direccion='"
-					+ user.getDireccion() + "', " + "codPostal=" + user.getCodPostal() + ", " + "localidad='"
+			String sentenciaSql = "update user set " 
+		+ "user='" + user.getUser() + "', " 
+					+ "apellido='"
+					+ user.getApellido() + "', " 
+					+ "edad=" + user.getEdad() + ", " 
+					+ "direccion='"
+					+ user.getDireccion() + "', " 
+					+ "codPostal=" + user.getCodPostal() + ", " 
+					+ "localidad='"
 					+ user.getLocalidad() + "', " + "telefono=" + user.getTelefono() + " where dni = '"
 					+ user.getDni() + "'";
 			System.out.println(sentenciaSql);
