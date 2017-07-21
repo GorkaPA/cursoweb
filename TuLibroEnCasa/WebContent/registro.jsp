@@ -75,7 +75,7 @@ div {
         <label for="confClave">Confirmar Clave:</label>
         <input type="password" name="confClave" id="confClave" placeholder="Confirm Password" required onkeyup="validatePassword()"/>
         
-        <button type="submit" id="myBtn">Registrar</button>
+        <button type="submit" id="myBtn" value="disable">Registrar</button>
 </form>
 </div>
 </center>
