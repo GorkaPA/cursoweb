@@ -43,9 +43,9 @@ public class SrvGuardarRegistro extends HttpServlet {
 			bdOperaciones.abrirConexion();
 			bdOperaciones.insertarCliente(cliente);
 			bdOperaciones.cerrarConexion();
-			ServletContext ct = getServletContext();
-			RequestDispatcher rd = ct.getRequestDispatcher("/SrvClientes");
-			rd.forward(request,response);
+			ServletContext ServletContext = getServletContext();
+			RequestDispatcher requestDispatcher = ServletContext.getRequestDispatcher("/SrvClientes");
+			requestDispatcher.forward(request,response);
 		}
 		else
 		{
