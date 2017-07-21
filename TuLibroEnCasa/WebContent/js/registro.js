@@ -5,6 +5,7 @@ var password = document.getElementById("clave")
   , confirm_password = document.getElementById("confClave");
 
 function validatePassword(){
+	alert("dentro");
   if(password.value != confirm_password.value) {
     confirm_password.setCustomValidity("Passwords Don't Match");
   } else {

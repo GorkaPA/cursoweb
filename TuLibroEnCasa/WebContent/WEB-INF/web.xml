@@ -20,26 +20,6 @@
 	</servlet-mapping>
 	<servlet>
 		<description></description>
-		<display-name>SrvBuscarLibros</display-name>
-		<servlet-name>SrvBuscarLibros</servlet-name>
-		<servlet-class>tulibroencasa.servlets.SrvBuscarLibros</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>SrvBuscarLibros</servlet-name>
-		<url-pattern>/servlet/SrvBuscarLibros</url-pattern>
-	</servlet-mapping>
-	<servlet>
-		<description></description>
-		<display-name>SrvMostrarLibros</display-name>
-		<servlet-name>SrvMostrarLibros</servlet-name>
-		<servlet-class>tulibroencasa.servlets.SrvMostrarLibros</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>SrvMostrarLibros</servlet-name>
-		<url-pattern>/servlet/SrvMostrarLibros</url-pattern>
-	</servlet-mapping>
-		<servlet>
-		<description></description>
 		<display-name>SrvRegistro</display-name>
 		<servlet-name>SrvRegistro</servlet-name>
 		<servlet-class>tulibroencasa.servlets.SrvRegistro</servlet-class>
@@ -48,7 +28,7 @@
 		<servlet-name>SrvRegistro</servlet-name>
 		<url-pattern>/servlet/SrvRegistro</url-pattern>
 	</servlet-mapping>
-		<servlet>
+	<servlet>
 		<description></description>
 		<display-name>SrvGuardarRegistro</display-name>
 		<servlet-name>SrvGuardarRegistro</servlet-name>

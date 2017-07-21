@@ -56,7 +56,7 @@ public class SrvActualizarCliente extends HttpServlet {
 			}
 			bdOperaciones.cerrarConexion();
 			ServletContext ct = getServletContext();
-			RequestDispatcher rd = ct.getRequestDispatcher("/SrvClientes");
+			RequestDispatcher rd = ct.getRequestDispatcher("/index.jsp");
 			rd.forward(request,response);
 		}
 		else
