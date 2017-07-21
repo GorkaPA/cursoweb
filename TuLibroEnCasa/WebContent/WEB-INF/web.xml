@@ -10,7 +10,7 @@
 		<servlet-class>tulibroencasa.servlets.SrvValidarEntrada</servlet-class>
 		<init-param>
 			<param-name>fichero_propiedades</param-name>
-			<param-value>C:\\Users\\ZALLA\\Documents\\java\\workspace\\TuLibroEnCasa\\WebContent\\WEB-INF\\tulibroencasa.properties</param-value>
+			<param-value>C:\\Users\\ZALLA\\git\\cursoweb\\TuLibroEnCasa\\WebContent\\WEB-INF\\tulibroencasa.properties</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
@@ -47,5 +47,15 @@
 	<servlet-mapping>
 		<servlet-name>SrvRegistro</servlet-name>
 		<url-pattern>/servlet/SrvRegistro</url-pattern>
+	</servlet-mapping>
+		<servlet>
+		<description></description>
+		<display-name>SrvGuardarRegistro</display-name>
+		<servlet-name>SrvGuardarRegistro</servlet-name>
+		<servlet-class>tulibroencasa.servlets.SrvGuardarRegistro</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SrvGuardarRegistro</servlet-name>
+		<url-pattern>/servlet/SrvGuardarRegistro</url-pattern>
 	</servlet-mapping>
 </web-app>

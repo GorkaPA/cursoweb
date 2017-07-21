@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <style>
 
-input[type=text], select {
+input[type=text],input[type=email],input[type=date],input[type=password], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -37,6 +37,7 @@ div {
 </style>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script language="javascript" type="text/javascript" src="/TuLibroEnCasa/js/registro.js"></script>
 <title>Registro</title>
 </head>
 <body>
@@ -45,34 +46,34 @@ div {
 <div>
 <form action="/TuLibroEnCasa/servlet/SrvGuardarRegistro" method="post">
         <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre"/>
+        <input type="text" name="nombre" id="nombre" required/>
         
         <label for="apellido1">Primer apellido:</label>
-        <input type="text" name="apellido1" id="apellido1"/>
+        <input type="text" name="apellido1" id="apellido1" required/>
         
         <label for="apellido2">Segundo apellido:</label>
-        <input type="text" name="apellido2" id="apellido2"/>
+        <input type="text" name="apellido2" id="apellido2" required/>
         
         <label for="DNI">DNI:</label>
-        <input type="text" name="DNI" id="DNI"/>
+        <input type="text" name="DNI" id="DNI" required/>
         
         <label for="direccion">Direcci&oacute;n:</label>
-        <input type="text" name="direccion" id="direccion"/>
+        <input type="text" name="direccion" id="direccion" required/>
         
         <label for="fechaNacimiento">Fecha de nacimiento:</label>
-        <input type="text" name="fechaNacimiento" id="fechaNacimiento"/>
+        <input type="date" name="fechaNacimiento" id="fechaNacimiento" required/>
         
         <label for="email">E-mail:</label>
-        <input type="text" name="email" id="email"/>
+        <input type="email" name="email" id="email" required/>
         
         <label for="usuario">Usuario:</label>
-        <input type="text" name="usuario" id="usuario"/>
+        <input type="text" name="usuario" id="usuario" required/>
         
         <label for="clave">Clave:</label>
-        <input type="text" name="clave" id="clave"/>
+        <input type="password" name="clave" id="clave" placeholder="Password" required/>
         
         <label for="confClave">Confirmar Clave:</label>
-        <input type="text" name="confClave" id="confClave"/>
+        <input type="password" name="confClave" id="confClave" placeholder="Confirm Password" required/>
         
         <button type="submit">Registrar</button>
 </form>

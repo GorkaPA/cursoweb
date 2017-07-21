@@ -10,6 +10,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import tulibroencasa.beans.Cliente;
 import tulibroencasa.beans.*;
 
 /**
@@ -46,4 +47,31 @@ public class BdOperaciones extends BdBase {
 		}
 		return correcto;
 	}
+
+	public boolean insertarCliente(Cliente cliente) {
+		boolean correcto = true;
+		try {
+			String sentenciaSql = "insert into clientes(dni,nombre,apellido1,apellido2,direccion,fecha_nacimiento,email,usuario,password) "
+					+ "values ('"
+					+ cliente.getDni() + "','" 
+					+ cliente.getNombre() + "','" 
+					+ cliente.getApellido1() + "','"
+					+ cliente.getApellido2() + "','"
+					+ cliente.getDireccion() + "','" 
+					+ cliente.getFechaNacimiento() + "','" 
+					+ cliente.getEmail() + "','"
+					+ cliente.getUsuario() + "','" 
+					+ cliente.getClave() + "')";
+			System.out.println(sentenciaSql);
+			Statement stmt = conexion.createStatement();
+			stmt.execute(sentenciaSql);
+			stmt.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("Inserción de cliente no efectuada correctamente");
+			correcto = false;
+		}
+		return correcto;
+	}
+
 }
