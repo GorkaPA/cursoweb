@@ -17,9 +17,10 @@ import tulibroencasa.bd.BdOperaciones;
  */
 public class SrvRegistro extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-	public void service(HttpServletRequest request, HttpServletResponse response)
-			throws IOException, ServletException {
-			response.sendRedirect("../registro.jsp");
+
+	public void service(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+		ServletContext ct = getServletContext();
+		RequestDispatcher rd = ct.getRequestDispatcher("/registro.jsp");
+		rd.forward(request, response);
 	}
 }

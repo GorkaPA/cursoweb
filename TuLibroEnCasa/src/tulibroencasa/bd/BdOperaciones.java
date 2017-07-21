@@ -51,7 +51,7 @@ public class BdOperaciones extends BdBase {
 	public boolean insertarCliente(Cliente cliente) {
 		boolean correcto = true;
 		try {
-			String sentenciaSql = "insert into clientes(dni,nombre,apellido1,apellido2,direccion,fecha_nacimiento,email,usuario,password) "
+			String sentenciaSql = "insert into cliente(dni,nombre,apellido1,apellido2,direccion,fecha_nacimiento,email,usuario,password) "
 					+ "values ('"
 					+ cliente.getDni() + "','" 
 					+ cliente.getNombre() + "','" 
