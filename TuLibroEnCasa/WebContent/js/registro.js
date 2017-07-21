@@ -2,7 +2,7 @@
  * 
  */
 function validatePassword(){
-  if(password.value != confirm_password.value) {
+  if(getElementById("confClave").value != getElementById("clave").value) {
     confirm_password.setCustomValidity("Passwords Don't Match");
   } else {
     confirm_password.setCustomValidity('');
