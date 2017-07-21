@@ -70,10 +70,10 @@ div {
         <input type="text" name="usuario" id="usuario" required/>
         
         <label for="clave">Clave:</label>
-        <input type="password" name="clave" id="clave" placeholder="Password" required/>
+        <input type="password" name="clave" id="clave" placeholder="Password" required onchange="validatePassword()"/>
         
         <label for="confClave">Confirmar Clave:</label>
-        <input type="password" name="confClave" id="confClave" placeholder="Confirm Password" required/>
+        <input type="password" name="confClave" id="confClave" placeholder="Confirm Password" required onkeyup="validatePassword()"/>
         
         <button type="submit">Registrar</button>
 </form>
