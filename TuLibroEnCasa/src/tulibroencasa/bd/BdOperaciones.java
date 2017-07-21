@@ -7,6 +7,7 @@
 package tulibroencasa.bd;
 
 import java.sql.*;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -58,7 +59,7 @@ public class BdOperaciones extends BdBase {
 					+ cliente.getApellido1() + "','"
 					+ cliente.getApellido2() + "','"
 					+ cliente.getDireccion() + "','" 
-					+ cliente.getFechaNacimiento() + "','" 
+					+ new SimpleDateFormat("yyyy-MM-dd").format(cliente.getFechaNacimiento()) + "','" 
 					+ cliente.getEmail() + "','"
 					+ cliente.getUsuario() + "','" 
 					+ cliente.getClave() + "')";
