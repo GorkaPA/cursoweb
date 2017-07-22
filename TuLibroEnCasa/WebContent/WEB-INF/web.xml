@@ -10,7 +10,7 @@
 		<servlet-class>tulibroencasa.servlets.SrvValidarEntrada</servlet-class>
 		<init-param>
 			<param-name>fichero_propiedades</param-name>
-			<param-value>C:\\Users\\ZALLA\\git\\cursoweb\\TuLibroEnCasa\\WebContent\\WEB-INF\\tulibroencasa.properties</param-value>
+			<param-value>C:\\Users\\gorka\\Documents\\GitHub\\cursoweb\\TuLibroEnCasa\\WebContent\\WEB-INF\\tulibroencasa.properties</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
