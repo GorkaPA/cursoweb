@@ -74,5 +74,31 @@ public class BdOperaciones extends BdBase {
 		}
 		return correcto;
 	}
-
+	public List<Libro> getLibrosTitulo(String titulo) {
+		boolean correcto = true;
+		try {
+			String sentenciaSql = "select * from libro where" + " titulo='" + titulo
+					+ "'";
+			System.out.println(sentenciaSql);
+			Statement stmt = conexion.createStatement();
+			ResultSet rs = stmt.executeQuery(sentenciaSql);
+			boolean hayMas = rs.next();
+			Libro libro = null;
+			while (hayMas) {
+				libro = new Libro();
+				cliente.setDni(rs.getString(1));
+				cliente.setNombre(rs.getString(2));
+				cliente.setApellido(rs.getString(3));
+				cliente.setEdad(rs.getInt(4));
+				clientes.add(cliente);
+				hayMas = rs.next();
+			rs.close();
+			stmt.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("Validación de usuario no efectuada correctamente");
+			correcto = false;
+		}
+		return correcto;
+	}
 }

@@ -14,7 +14,6 @@ public class Cliente implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	
-	
 	private String nombre;
 	private String apellido1;
 	private String apellido2;
