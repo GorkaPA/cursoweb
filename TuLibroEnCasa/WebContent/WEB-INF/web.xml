@@ -38,4 +38,14 @@
 		<servlet-name>SrvGuardarRegistro</servlet-name>
 		<url-pattern>/servlet/SrvGuardarRegistro</url-pattern>
 	</servlet-mapping>
+		<servlet>
+		<description></description>
+		<display-name>SrvBuscarLibros</display-name>
+		<servlet-name>SrvBuscarLibros</servlet-name>
+		<servlet-class>tulibroencasa.servlets.SrvBuscarLibros</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SrvBuscarLibros</servlet-name>
+		<url-pattern>/servlet/SrvBuscarLibros</url-pattern>
+	</servlet-mapping>
 </web-app>
