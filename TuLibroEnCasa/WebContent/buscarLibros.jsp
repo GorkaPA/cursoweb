@@ -25,9 +25,8 @@
 				<option value="4">Suspense</option>
 			</select> <br /> <br />
 			<h3>Orden:</h3>
-			&nbsp;&nbsp;&nbsp; <input name="opcionOrden" type="radio"
-				value="OrdenTitulo" />Titulo&nbsp;&nbsp;&nbsp; <input
-				name="opcionOrden" type="radio" value="OrdenAutor" />Autor <br />
+			&nbsp;&nbsp;&nbsp; <input name="opcionOrden" type="radio" value="OrdenTitulo" />
+			Titulo&nbsp;&nbsp;&nbsp; <input name="opcionOrden" type="radio" value="OrdenAutor" />Autor <br />
 			<br /> <input type="submit" value="Buscar" />
 		</form>
 	</center>

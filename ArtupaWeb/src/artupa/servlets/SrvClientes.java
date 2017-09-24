@@ -11,7 +11,6 @@ import java.util.List;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
-//import javax.servlet.jsp.*;
 import javax.servlet.http.*;
 import artupa.bd.BdOperaciones;
 import artupa.beans.Cliente;
